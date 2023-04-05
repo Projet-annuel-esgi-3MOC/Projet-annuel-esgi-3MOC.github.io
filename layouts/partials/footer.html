@@ -1,0 +1,6 @@
+{{ with .Params.hide_footer }}
+
+{{ else }}
+    Copyright {{ .Site.Params.author }} {{ now.Year }}. 
+    Utilise <a href="https://github.com/picocss/pico" target="_blank">Pico.css</a> et <a href="https://gohugo.io/" target="_blank">Hugo</a>
+{{ end }}

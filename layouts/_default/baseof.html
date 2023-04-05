@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        {{ partial "meta.html" . }}
+    </head>
+
+    <body>
+        {{ partial "nav.html" }}
+    
+        <header>
+            <h1>{{ print .Page.Title }}</h1>
+
+            {{ with .Params.intro }}
+            <p>
+                {{ print . | markdownify }}
+            </p>
+            {{ end }}
+            <aside>
+                {{ .TableOfContents }}
+            </aside>
+    
+        </header>
+        <main>
+            {{ block "main" . }}
+            {{ end }}
+        </main>
+        <footer>
+            {{ partial "footer.html" . }}
+        </footer>
+    </body>
+</html>
