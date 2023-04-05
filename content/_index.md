@@ -1,1 +1,1 @@
-Bonjour a tous
+Voici la documentation de l'appli Cookup réalisée par Pierre-Elie Romer, Ivo Talvet et Elie Bengou.
