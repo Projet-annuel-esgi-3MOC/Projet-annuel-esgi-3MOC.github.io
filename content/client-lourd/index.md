@@ -6,3 +6,5 @@ draft: false
 
 Par defaut le client lourd se connecte avec les credential par défaut 
 et affiche la liste de todo existant sur la base de données firebase.
+
+![Listing](accueil.png)
