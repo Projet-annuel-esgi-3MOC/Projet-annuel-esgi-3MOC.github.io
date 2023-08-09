@@ -5,3 +5,5 @@ hugo.linux
 hugo.darwin
 
 /.idea
+
+**/.DS_Store
