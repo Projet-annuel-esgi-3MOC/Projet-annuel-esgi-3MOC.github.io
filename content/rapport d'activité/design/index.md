@@ -2,6 +2,20 @@
 title: Design
 ---
 
+Organisation
+---
+On s'est créé un salon discord où on a crée des channel 
+ discuter de chaque partie du projet.
+
+On a créé un channel github pour avoir les notifications 
+d'activité de git.
+
+On a créé un channel de notifications de l'activité sur taïga.
+
+On a utilisé taiga.io pour planifier le projet en sprints.
+
+On a essayé de faire des daily standups.
+
 Architecture
 ---
 
@@ -18,6 +32,21 @@ en electricité n'impacte pas le client ipad.
 Le diagrammew de use cases a été fait avec umlet.
 
 {{<figure src="usecases.png" caption="Use cases" >}}
+
+Le stockage des medias se fait avec Firebase storage
+https://firebase.google.com/docs/storage qui est un 
+CDN qui permet des conversions en webp, le 
+redimensionnement automatique des images via une 
+url du type image.jpg?width=50, etc.
+
+Un bon tutorial a ce sujet 
+https://dev.to/dbanisimov/building-image-cdn-with-firebase-15ef
+
+Le stockage des images se fait sur le google cloud
+https://firebase.google.com/docs/storage/admin/start
+
+On utilise Firebase authentification pour 
+identifier les utilisateurs.
 
 Design
 ---
