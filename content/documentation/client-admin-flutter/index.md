@@ -6,3 +6,4 @@ draft: false
 
 Pour demarrer après un git clone, il faut exécuter
 la commande `flutter run -d chrome`.
+

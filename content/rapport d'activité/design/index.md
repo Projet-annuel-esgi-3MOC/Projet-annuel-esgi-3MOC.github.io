@@ -74,6 +74,11 @@ populaires sur la marketplace
 - content reel
 - unsplash
 
+Premiere version du Figma
+
+{{<figure src="figma.png" caption="Use cases" >}}
+
+
 MLD
 ---
 
