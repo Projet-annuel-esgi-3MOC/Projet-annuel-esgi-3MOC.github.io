@@ -89,5 +89,10 @@ copier le dal d'une autre entite et adapter le code
 change the service to actually call the firebase dal
 change le controlleur comme les autres
 add the dal as an injectable service in the app module
-create the flutter crud, hopefully with less repeated logic
+cree l'entité dans flutter qui mimic celle de nodejs
+creer le provider de l'entite
+ajouter le provider dans le main
+create l'index avec la logique repetee
+creer le popup edit
+ajouter le crud dans le liste des cruds
 ```
