@@ -52,3 +52,42 @@ Pour le image picker on utilise https://pub.dev/packages/image_picker
 
 Pour le deuxieme CRUD on a essayé d'voir quelque chose de 
 generique afin d'avoir le minimum de code qui se repete.
+
+Pour les interfaces du coté de NodeJS, on veut que l'objet
+de bas contienne toutes les propriétés (optionnelles ou non),
+y compris l'id qui peut être optionnel car obtenu apres
+persistence sur Firebase.
+Le createDTO doit conteni toutes les propritétés sauf l'id.
+L'updateDTO a tous les fiels en optionnel, sauf l'id qui
+est obligatoire. Afin d'éviter la répétition on groupe
+toutes ces structures surt une unique page
+
+```typescript
+export interface BaseMedia {
+    _id?: String;
+    accessUrl: String;
+    accessLocalStoragePath: String;
+    mediaCategories: MediaCategory[];
+}
+
+export type CreateMediaDTO = Omit<BaseMedia, '_id'>;
+
+export interface UpdateMediaDTO extends Partial<Omit<BaseMedia, '_id'>> {
+    // All fields are optional except the id field
+    _id: String;
+}
+```
+
+Etapes
+---
+
+```
+npx nest g resource Ingredient
+modifier l'entitié pour y mettre les choses utiles
+merge les dto dans le meme fichier
+copier le dal d'une autre entite et adapter le code
+change the service to actually call the firebase dal
+change le controlleur comme les autres
+add the dal as an injectable service in the app module
+create the flutter crud, hopefully with less repeated logic
+```
