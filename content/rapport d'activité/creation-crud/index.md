@@ -96,3 +96,22 @@ create l'index avec la logique repetee
 creer le popup edit
 ajouter le crud dans le liste des cruds
 ```
+
+Pour autoriser le CORS
+
+https://firebase.google.com/docs/storage/web/download-files#cors_configuration
+
+```
+cors.json
+
+[
+  {
+    "origin": ["*"],
+    "method": ["GET"],
+    "maxAgeSeconds": 3600
+  }
+]
+
+gcloud init
+gsutil cors set cors.json gs://cookup-afee1.appspot.com
+```
