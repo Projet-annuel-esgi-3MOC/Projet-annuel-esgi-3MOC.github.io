@@ -60,6 +60,8 @@ de cuisine.
 Inspiration:
 - awwwards
 - dribble
+- https://www.happyhues.co/palettes/12
+- https://www.supercook.com/#/desktop
 
 Quelques ressources pour les fontes :
 - https://fontsinuse.com

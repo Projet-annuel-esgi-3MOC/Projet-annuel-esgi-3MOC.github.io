@@ -101,6 +101,8 @@ Pour autoriser le CORS
 
 https://firebase.google.com/docs/storage/web/download-files#cors_configuration
 
+https://cloud.google.com/storage/docs/gsutil_install?hl=fr#mac
+
 ```
 cors.json
 
